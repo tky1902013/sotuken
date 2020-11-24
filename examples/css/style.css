@@ -1,0 +1,270 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+html::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  float: left;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  text-align: left;
+  float: left;
+}
+
+header ul {
+  text-align: left;
+  float: left;
+  list-style: none;
+}
+
+.header2{
+  margin-top:2%;
+}
+  
+  .header2 h1{
+  margin-top:1%;
+  font-size:14px;
+  text-decoration: underline;
+}
+  
+  .header2 form{
+  float:left;
+  margin-left:1%;
+}
+  
+  .header2 ul{
+  float:left;
+  list-style: none;
+}
+  
+  .header2 li{
+  margin-bottom:1%;
+}
+
+.shokuba_touroku{
+    width: 25%;
+    height: 2%;
+    margin-left: 36%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: block;
+    padding: 1%;
+  }
+
+  .shokuba_touroku,
+a.shokuba_touroku {
+  color: #fff;
+  background-color:rgb(121, 30, 30);
+  text-decoration: none;
+}
+.shokuba_touroku:hover,
+a.shokuba_touroku:hover {
+  color: #fff;
+  background:rgb(241, 96, 96);
+}
+
+.shokuba_shoutai{
+  width: 25%;
+  height: 2%;
+  margin-left: 36%;
+  display: block;
+  padding: 1%;
+}
+
+.shokuba_shoutai,
+a.shokuba_shoutai {
+color: #fff;
+background-color:rgb(56, 56, 150);
+text-decoration: none;
+}
+.shokuba_shoutai:hover,
+a.shokuba_shoutai:hover {
+color: #fff;
+background:rgb(97, 97, 247);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+main h1{
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+footer {}
+
+#calendar {
+  width:70%;
+  height:100%;
+  float:left;
+ }
+
+.fc-toolbar.fc-header-toolbar {
+  width:100%
+ }
+
+.header_button {
+  font-size: 12%;
+  width: 7%;
+  height: 10%;
+
+  float: right;
+
+  display: block;
+  padding: 7px 5px;
+  text-align: center;
+}.fc-toolbar.fc-header-toolbar {
+  margin: 0 0 1%;
+}
+
+.header_button,
+a.header_button {
+  color: #fff;
+  background-color: black;
+  text-decoration: none;
+}
+
+.header_button:hover,
+a.header_button:hover {
+  color: #fff;
+  background: rgb(67, 67, 72);
+}
+
+.header_button2 {
+  font-size: 12%;
+  width: 7%;
+  height: 10%;
+
+  float: right;
+
+  display: block;
+  padding: 5px 5px;
+  text-align: center;
+  border-radius:5px 5px;
+}.fc-toolbar.fc-header-toolbar {
+  margin: 0 0 1%;
+}
+
+.header_button2,
+a.header_button2 {
+  color: #fff;
+  background-color: rgb(38, 53, 84);
+  text-decoration: none;
+}
+
+.header_button2:hover,
+a.header_button2:hover {
+  color: #fff;
+  background: rgb(67, 67, 72);
+}
+
+.current_button {
+  font-size: 12%;
+  width: 7%;
+  height: 30%;
+
+  float: right;
+
+  display: block;
+  padding: 7px 5px;
+  text-align: center;
+}
+
+.current_button,
+a.current_button {
+  color: #fff;
+  background-color: rgb(93, 10, 10);
+  text-decoration: none;
+}
+
+.current_button,
+a.current_button:hover {
+  color: #fff;
+  background: rgb(240, 28, 28);
+}
+
+  .tabbox{
+      width: 29%;
+      margin-top: 1%;
+      float: right;
+    }
+
+   /* ▼タブ(共通装飾＋非選択状態の装飾) */
+   .tab {
+      display: inline-block;          /* インラインブロック化 */
+      border-width: 1px 1px 0px 1px;  /* 上側と左右に枠線を引く */
+      border-style: solid;            /* 枠線の種類は「実線」 */
+      border-color: black;            /* 枠線の色は「黒」 */
+      padding: 2% 1%;            /* 内側の余白量 */
+      font-weight: bold;              /* タブの文字を太字にする */
+      color: black;                   /* タブの文字色：黒色 */
+      background-color: #e0e0e0;      /* タブの(非選択状態の)背景色：灰色 */
+      border-radius: 0.75em 0.75em 0px 0px;
+   }
+
+   /* ▼タブにマウスポインタが載った際の装飾 */
+   .tab:hover {
+      color: green;                /* タブの文字色：緑色 */
+      background-color: #ccffcc;   /* タブの背景色：淡い緑色 */
+      cursor: pointer;             /* マウスポインタの形状を「指(指し示す形)」にする */
+   }
+
+   /* ▼選択状態のタブ(＝チェックが入っているラジオボタンの隣にあるタブの装飾) */
+   input:checked + .tab {
+      color: red;                  /* タブの文字色：赤色 */
+      background-color: #ffffcc;   /* タブの背景色：淡い黄色 */
+   }
+
+   /* ▼タブ機能を制御するラジオボタン(非表示にする) */
+.tabbox input#tabcheck1,input#tabcheck2,input#tabcheck3 { display: none; }
+
+ /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+ .tabcontent {
+  display: none;             /* 標準では非表示にする */
+  border: 1px solid black;   /* 枠線を引く：黒色で1ピクセルの実線 */
+  padding: 1em;              /* 内側の余白量 */
+  background-color: #ffffcc; /* 背景色：淡い黄色(※選択中のタブの背景色と合わせます) */
+}
+
+.tabcontent h1{
+  font-size: 20px;
+}
+
+.tabcontent ul{
+  list-style: none;
+  text-align: left;
+}
+
+/* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+#tabcheck1:checked ~ #tabcontent1 { display: block; }
+#tabcheck2:checked ~ #tabcontent2 { display: block; }
+#tabcheck3:checked ~ #tabcontent3 { display: block; }
+
+   /* ▼チェックが入っているラジオボタンの隣にあるタブの装飾(＝選択状態のタブ) */
+   input:checked + .tab {
+    z-index: 10;         /* ※2A */
+    position: relative;  /* ※3 */
+ }
+ /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+ .tabcontent {
+    margin-top: -1px;    /* ※1 */
+    z-index: 0;          /* ※2B */
+    position: relative;  /* ※3 */
+ }
